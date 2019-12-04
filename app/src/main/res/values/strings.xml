@@ -10,4 +10,15 @@
     <string name="ampoEmail">Entrez Votre E-mail Ici</string>
     <string name="ampoRecover">Récuperer</string>
     <string name="ampoCancel">Annuler</string>
+    <string name="menuSettings">Options</string>
+    <string name="menuHelp">Aide</string>
+    <string name="Place">Lieu</string>
+    <string name="Jour">Jours d\'Ouverture</string>
+    <string name="MF">Lundi à Vendredi</string>
+    <string name="Saturday">Samedi</string>
+    <string name="hours">Horaires d\'Ouverture</string>
+    <string name="Openning">Ouverture</string>
+    <string name="Closing">Fermeture</string>
+    <string name="filter">Filtrer</string>
+    <string name="empty">Vider</string>
 </resources>

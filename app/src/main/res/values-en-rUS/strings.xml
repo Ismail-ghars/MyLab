@@ -11,4 +11,15 @@
     <string name="ampoEmail">Tap your E\'mail Here</string>
     <string name="ampoRecover">Recover</string>
     <string name="ampoCancel">Cancel</string>
+    <string name="menuSettings">Settings</string>
+    <string name="menuHelp">Help</string>
+    <string name="Place">Place</string>
+    <string name="Jour">Working Days</string>
+    <string name="MF">Monday to Friday</string>
+    <string name="Saturday">Saturday</string>
+    <string name="hours">Working Hours</string>
+    <string name="Openning">Openning</string>
+    <string name="Closing">Closing</string>
+    <string name="filter">Filter</string>
+    <string name="empty">Empty</string>
 </resources>
