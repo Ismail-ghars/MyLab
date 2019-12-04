@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyLab</string>
+    <string name="createAccount"><u>Create an Account</u></string>
+    <string name="passeOublie"><u><b>Forgotten your Password?</b></u></string>
+    <string name="signInButton">Sign In</string>
+    <string name="noAccount">You don\'t have an Account?</string>
+    <string name="alt">or Sign in with a Google Account</string>
+    <string name="pass">Password</string>
+    <string name="ampoTitle">Password Forgotten</string>
+    <string name="ampoEmail">Tap your E\'mail Here</string>
+    <string name="ampoRecover">Recover</string>
+    <string name="ampoCancel">Cancel</string>
+</resources>
