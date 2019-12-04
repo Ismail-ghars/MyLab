@@ -9,7 +9,6 @@
     android:background="@color/background"
     android:isScrollContainer="true"
     >
-
     <include
         layout="@layout/app_bar"
         android:id="@+id/bar">
