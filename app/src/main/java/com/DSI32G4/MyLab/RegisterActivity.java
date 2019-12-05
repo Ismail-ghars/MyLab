@@ -33,6 +33,15 @@ public class RegisterActivity extends Activity {
                save=(Button)findViewById(R.id.btnsave);
                cancel=(Button)findViewById(R.id.btncancel);
 
+               cancel.setOnClickListener(new OnClickListener() {
+
+                       @Override
+                       public void onClick(View arg0) {
+                               startActivity(new Intent(getApplicationContext(), loginActivity.class));
+
+                       }
+               });
+
 
                save.setOnClickListener(new OnClickListener() {
 

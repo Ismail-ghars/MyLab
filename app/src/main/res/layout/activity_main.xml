@@ -12,13 +12,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="88dp"
-        android:text="@string/app_name"
+        android:text="@string/name_app"
         android:textSize="15pt"
-        android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:shadowColor="#000"
+        android:shadowDx="1"
+        android:shadowDy="10"
+        android:shadowRadius="10"
+        android:textStyle="bold"
+
+        />
 
     <EditText
         android:id="@+id/eduser"

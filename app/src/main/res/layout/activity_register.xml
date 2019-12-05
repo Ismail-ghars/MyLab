@@ -15,7 +15,13 @@
         android:layout_weight="2"
         android:gravity="center"
         android:text="Crée un compte"
-        android:textSize="36sp"></TextView>
+        android:textSize="36sp"
+        android:shadowColor="#000"
+        android:shadowDx="1"
+        android:shadowDy="10"
+        android:shadowRadius="10"
+        android:textStyle="bold"
+        ></TextView>
 
 
 
@@ -43,28 +49,32 @@
             />
 
 
-    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal"
         >
-        <RadioButton android:id="@+id/radio_homme"
+
+        <RadioButton
+            android:id="@+id/radio_homme"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:width="0dp"
             android:layout_weight="1"
+            android:width="0dp"
+            android:onClick="onRadioButtonClicked"
             android:text="@string/Homme"
-            android:onClick="onRadioButtonClicked"
-            />
-        <RadioButton android:id="@+id/radio_femme"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radio_femme"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:width="0dp"
             android:layout_weight="1"
-            android:text="@string/Femme"
+            android:width="0dp"
             android:onClick="onRadioButtonClicked"
-            />
+            android:text="@string/Femme"
+            android:textSize="20sp" />
     </RadioGroup>
 
         <EditText

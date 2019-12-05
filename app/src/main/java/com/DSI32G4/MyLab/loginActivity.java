@@ -60,6 +60,7 @@ public class loginActivity extends Activity {
                 if(password.equals(StoredPassword)){
 
                     Toast.makeText(getApplicationContext(), StoredPassword+"Login Successfully", Toast.LENGTH_LONG).show();
+                    startActivity(new Intent(getApplicationContext(), Accueil.class));
 
                 }
                 else{
@@ -83,11 +84,11 @@ public class loginActivity extends Activity {
         });
 
 
-
-
-
     }
-
+    @Override
+    public void onBackPressed() {
+        moveTaskToBack(true);
+    }
     /* @Override
                     public boolean onCreateOptionsMenu(Menu menu) {
 MenuInflater inflater = getMenuInflater();
