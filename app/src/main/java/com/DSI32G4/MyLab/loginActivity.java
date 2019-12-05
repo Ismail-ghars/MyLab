@@ -23,7 +23,6 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 
 public class loginActivity extends Activity {
 
-
     EditText user, pass;
     Button login;
     TextView not_reg;

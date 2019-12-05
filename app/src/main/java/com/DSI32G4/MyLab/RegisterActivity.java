@@ -30,7 +30,6 @@ public class RegisterActivity extends Activity {
                confpass=(EditText)findViewById(R.id.editconformpassword);
 
 
-
                save=(Button)findViewById(R.id.btnsave);
                cancel=(Button)findViewById(R.id.btncancel);
 

@@ -81,7 +81,6 @@ public String getMobNo() {
         // TODO Auto-generated method stub
         return DateNaissance;
         }
-
          public String getDateNaissance() {
                  return DateNaissance;
          }

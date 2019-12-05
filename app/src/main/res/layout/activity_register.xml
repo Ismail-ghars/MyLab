@@ -67,7 +67,6 @@
             />
     </RadioGroup>
 
-
         <EditText
             android:id="@+id/editmobileno"
             android:layout_width="match_parent"

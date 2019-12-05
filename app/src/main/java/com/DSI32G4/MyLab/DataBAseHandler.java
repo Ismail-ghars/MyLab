@@ -47,6 +47,7 @@ public class DataBAseHandler extends SQLiteOpenHelper {
 
         // Create tables again
         onCreate(db);
+
     }
 
     void addregister(RegisterData registerdata)
