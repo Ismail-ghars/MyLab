@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">MyLab</string>
+    <string name="Homme">Homme</string>
+    <string name="Femme">Femme</string>
     <string name="createAccount"><u>Créer un Compte</u></string>
     <string name="passeOublie"><u><b>Mot de Passe Oublié?</b></u></string>
 </resources>
