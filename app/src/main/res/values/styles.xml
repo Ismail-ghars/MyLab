@@ -11,7 +11,6 @@
     <style name="CustomToolbarStyle" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:background">@color/colorPrimaryDark</item>
 
-
     </style>
 
 </resources>
