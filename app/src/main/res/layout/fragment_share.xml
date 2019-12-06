@@ -9,7 +9,7 @@
     tools:context=".RegisterActivity">
 
     <TextView
-        android:id="@+id/creer"
+        android:id="@+id/modif"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -36,7 +36,7 @@
             android:textSize="26sp"></TextView>
 
         <EditText
-            android:id="@+id/editfirstname"
+            android:id="@+id/modiffirstname"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="3"
@@ -57,7 +57,7 @@
             android:textSize="26sp"></TextView>
 
         <EditText
-            android:id="@+id/editlastname"
+            android:id="@+id/modiflastname"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="3"
@@ -71,22 +71,20 @@
         android:orientation="horizontal">
 
         <RadioButton
-            android:id="@+id/radio_homme"
+            android:id="@+id/modif_radio_homme"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:width="0dp"
-            android:onClick="onRadioButtonClicked"
             android:text="@string/Homme"
             android:textSize="20sp" />
 
         <RadioButton
-            android:id="@+id/radio_femme"
+            android:id="@+id/modif_radio_femme"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:width="0dp"
-            android:onClick="onRadioButtonClicked"
             android:text="@string/Femme"
             android:textSize="20sp" />
     </RadioGroup>
@@ -105,7 +103,7 @@
             android:textSize="20sp"></TextView>
 
         <EditText
-            android:id="@+id/editmobileno"
+            android:id="@+id/modifmobileno"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="3"
@@ -127,7 +125,7 @@
             android:textSize="20sp"></TextView>
 
         <EditText
-            android:id="@+id/editemail"
+            android:id="@+id/modifemail"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="3"
@@ -143,7 +141,7 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btnsave"
+            android:id="@+id/btnmodif"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -151,7 +149,7 @@
             android:text="Modifier" />
 
         <Button
-            android:id="@+id/btncancel"
+            android:id="@+id/btncancelmodif"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"

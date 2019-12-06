@@ -42,7 +42,6 @@ public class RegisterActivity extends Activity {
                        }
                });
 
-
                save.setOnClickListener(new OnClickListener() {
 
 @Override

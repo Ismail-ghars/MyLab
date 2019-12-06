@@ -19,4 +19,7 @@
     <string name="menu_actuality">Actualité</string>
     <string name="menu_share">Mon Compte</string>
     <string name="menu_send">Se déconnecter</string>
+    <string name="image_description">Image d\'item</string>
+    <string name="text_description">Actualité</string>
+
 </resources>

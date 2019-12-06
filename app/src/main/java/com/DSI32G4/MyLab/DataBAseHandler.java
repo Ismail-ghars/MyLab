@@ -74,7 +74,6 @@ public class DataBAseHandler extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
         //String selectquery="SELECT * FROM TABLE_REGISTER";
         Cursor cursor=db.query(TABLE_REGISTER,null,  "email_id=?",new String[]{username},null, null, null, null);
-
         if(cursor.getCount()<1){
             cursor.close();
             return "Not Exist";

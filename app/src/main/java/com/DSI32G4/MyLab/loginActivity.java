@@ -29,6 +29,7 @@ public class loginActivity extends Activity {
     DataBAseHandler db;
     Cursor cursor;
 
+
     @Override
     protected void onStart() {
         super.onStart();
