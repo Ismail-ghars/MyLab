@@ -106,4 +106,18 @@ public class DataBAseHandler extends SQLiteOpenHelper {
         return DATABASE_VERSION;
     }
 
+
+    public boolean Check(String fieldValue){
+        SQLiteDatabase sqLiteDatabase = this.getReadableDatabase();
+        String query = "SELECT * FROM " + TABLE_REGISTER + " WHERE KEY_EMAIL_ID = " + fieldValue;
+        Cursor cursor = sqLiteDatabase.rawQuery(query,null);
+        if (cursor.getCount()<=0){
+            cursor.close();
+            return false;
+        }
+        cursor.close();
+        return true;
+    }
+
+
 }

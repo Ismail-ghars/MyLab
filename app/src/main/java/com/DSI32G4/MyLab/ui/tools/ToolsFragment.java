@@ -1,36 +1,18 @@
 package com.DSI32G4.MyLab.ui.tools;
 
-import android.annotation.SuppressLint;
-import android.content.Intent;
 import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ListView;
-import android.widget.SimpleAdapter;
-import android.widget.Toolbar;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.view.menu.MenuView;
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import com.DSI32G4.MyLab.R;
-import com.DSI32G4.MyLab.RecyclerAdapter;
-import com.DSI32G4.MyLab.RegisterActivity;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class ToolsFragment extends Fragment {
 

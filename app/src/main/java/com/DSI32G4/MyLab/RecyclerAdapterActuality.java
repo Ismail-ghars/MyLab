@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.snackbar.Snackbar;
 
 
-public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHolder> {
+public class RecyclerAdapterActuality extends RecyclerView.Adapter<RecyclerAdapterActuality.ViewHolder> {
 
     private String[] titles = {"Révolutionner l'accès aux soins grâce au numérique",
             "Sit in du cadre médical et paramédical",

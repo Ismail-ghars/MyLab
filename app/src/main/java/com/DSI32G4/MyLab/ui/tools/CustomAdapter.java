@@ -46,7 +46,7 @@ public class CustomAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        ViewHolder holder = null;
+        ViewHolder holder;
 
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
         if(convertView == null){
@@ -59,7 +59,10 @@ public class CustomAdapter extends BaseAdapter {
 
             RowItem row_pos = rowItems.get(position);
 
-            holder.pin.setImageResource(row_pos.getPin());
+
+
+
+            //holder.pin.setImageResource(row_pos.getPin());
             holder.titre.setText(row_pos.getTitle());
             holder.desc.setText(row_pos.getLocal());
 

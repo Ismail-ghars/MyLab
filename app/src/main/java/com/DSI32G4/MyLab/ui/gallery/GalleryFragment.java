@@ -11,7 +11,7 @@ import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.DSI32G4.MyLab.RecyclerAdapter;
+import com.DSI32G4.MyLab.RecyclerAdapterActuality;
 
 public class GalleryFragment extends Fragment {
 
@@ -25,13 +25,11 @@ public class GalleryFragment extends Fragment {
                 ViewModelProviders.of(this).get(GalleryViewModel.class);
 
 
-/////////
         recyclerView = new RecyclerView(getContext());
         layoutManager = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(layoutManager);
-        adapter = new RecyclerAdapter();
+        adapter = new RecyclerAdapterActuality();
         recyclerView.setAdapter(adapter);
-        ///////////////////
 
         return recyclerView;
     }

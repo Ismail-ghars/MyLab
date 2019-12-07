@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "99152827509",
+    "firebase_url": "https://mylab-260921.firebaseio.com",
+    "project_id": "mylab-260921",
+    "storage_bucket": "mylab-260921.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:99152827509:android:e0fa392a34764d66b1d43c",
+        "android_client_info": {
+          "package_name": "com.DSI32G4.MyLab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "99152827509-7hqm30gnjb1ncuam4l6qrh22ikm39r8q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5bHIB4WP8s66HNyCLjr0jEYTZAcE_4Ws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "99152827509-7hqm30gnjb1ncuam4l6qrh22ikm39r8q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
