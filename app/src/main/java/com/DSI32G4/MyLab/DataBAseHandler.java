@@ -67,10 +67,8 @@ public class DataBAseHandler extends SQLiteOpenHelper {
 
     }
 
-
-
     //code to get the register
-    String getregister(String username){
+    public String getregister(String username){
         SQLiteDatabase db = this.getReadableDatabase();
         //String selectquery="SELECT * FROM TABLE_REGISTER";
         Cursor cursor=db.query(TABLE_REGISTER,null,  "email_id=?",new String[]{username},null, null, null, null);
@@ -81,6 +79,75 @@ public class DataBAseHandler extends SQLiteOpenHelper {
         else if(cursor.getCount()>=1 && cursor.moveToFirst()){
 
             password = cursor.getString(cursor.getColumnIndex(KEY_PASSWORD));
+            cursor.close();
+
+        }
+        return password;
+
+
+    }
+    public String getnom(String username){
+        SQLiteDatabase db = this.getReadableDatabase();
+        //String selectquery="SELECT * FROM TABLE_REGISTER";
+        Cursor cursor=db.query(TABLE_REGISTER,null,  "email_id=?",new String[]{username},null, null, null, null);
+        if(cursor.getCount()<1){
+            cursor.close();
+            return "Not Exist";
+        }
+        else if(cursor.getCount()>=1 && cursor.moveToFirst()){
+
+            password = cursor.getString(cursor.getColumnIndex(KEY_FIRST_NAME));
+            cursor.close();
+
+        }
+        return password;
+
+    }
+    public String getprenom(String username){
+        SQLiteDatabase db = this.getReadableDatabase();
+        //String selectquery="SELECT * FROM TABLE_REGISTER";
+        Cursor cursor=db.query(TABLE_REGISTER,null,  "email_id=?",new String[]{username},null, null, null, null);
+        if(cursor.getCount()<1){
+            cursor.close();
+            return "Not Exist";
+        }
+        else if(cursor.getCount()>=1 && cursor.moveToFirst()){
+
+            password = cursor.getString(cursor.getColumnIndex(KEY_lAST_NAME));
+            cursor.close();
+
+        }
+        return password;
+    }
+
+    public String getDateNaissance(String username){
+        SQLiteDatabase db = this.getReadableDatabase();
+        //String selectquery="SELECT * FROM TABLE_REGISTER";
+        Cursor cursor=db.query(TABLE_REGISTER,null,  "email_id=?",new String[]{username},null, null, null, null);
+        if(cursor.getCount()<1){
+            cursor.close();
+            return "Not Exist";
+        }
+        else if(cursor.getCount()>=1 && cursor.moveToFirst()){
+
+            password = cursor.getString(cursor.getColumnIndex(KEY_lAST_NAME));
+            cursor.close();
+
+        }
+        return password;
+
+
+    }  public String gettel(String username){
+        SQLiteDatabase db = this.getReadableDatabase();
+        //String selectquery="SELECT * FROM TABLE_REGISTER";
+        Cursor cursor=db.query(TABLE_REGISTER,null,  "email_id=?",new String[]{username},null, null, null, null);
+        if(cursor.getCount()<1){
+            cursor.close();
+            return "Not Exist";
+        }
+        else if(cursor.getCount()>=1 && cursor.moveToFirst()){
+
+            password = cursor.getString(cursor.getColumnIndex(KEY_MOB_NO));
             cursor.close();
 
         }
@@ -118,6 +185,9 @@ public class DataBAseHandler extends SQLiteOpenHelper {
         cursor.close();
         return true;
     }
+
+
+
 
 
 }

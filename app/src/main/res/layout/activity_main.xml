@@ -23,7 +23,6 @@
         android:shadowDy="10"
         android:shadowRadius="10"
         android:textStyle="bold"
-
         />
 
     <EditText

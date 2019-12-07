@@ -21,10 +21,8 @@ public class GalleryFragment extends Fragment {
     RecyclerView.Adapter adapter;
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        galleryViewModel =
-                ViewModelProviders.of(this).get(GalleryViewModel.class);
 
-
+        galleryViewModel = ViewModelProviders.of(this).get(GalleryViewModel.class);
         recyclerView = new RecyclerView(getContext());
         layoutManager = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(layoutManager);

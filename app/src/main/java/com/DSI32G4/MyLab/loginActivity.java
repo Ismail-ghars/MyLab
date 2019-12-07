@@ -30,7 +30,8 @@ import static androidx.constraintlayout.widget.Constraints.TAG;
 
 public class loginActivity extends Activity {
 
-    EditText user, pass;
+    EditText  pass;
+    static EditText user;
     Button login;
     TextView not_reg;
     DataBAseHandler db;
@@ -38,6 +39,10 @@ public class loginActivity extends Activity {
     GoogleSignInClient mGoogleSignInClient;
     SignInButton signInButton;
     int RC_SIGN_IN = 0;
+
+    public static EditText getUser() {
+        return user;
+    }
 
     //Begining of Google Methods
     @Override
@@ -147,6 +152,7 @@ public class loginActivity extends Activity {
                 db=new DataBAseHandler(loginActivity.this, null, null, 2);
                 String username=user.getText().toString();
                 String password= pass.getText().toString();
+
 
                 String StoredPassword =db.getregister(username);
                 if(password.equals(StoredPassword)){
