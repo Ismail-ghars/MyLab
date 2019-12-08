@@ -57,6 +57,25 @@
         <item>@drawable/pin</item>
     </string-array>
 
+    <string-array name="cbll">
+        <item>346.414382,10.013988</item>
+        <item>16.8531896,11.0522259</item>
+        <item>16.8531896,13.0522259</item>
+        <item>26.8551896,11.0522259</item>
+        <item>33.8531896,55.0522259</item>
+        <item>36.8531896,11.0574059</item>
+        <item>16.8531896,11.0522259</item>
+        <item>16.8531896,13.0522259</item>
+        <item>26.8551896,11.0522259</item>
+        <item>33.8531896,55.0522259</item>
+        <item>36.8531896,11.0574059</item>
+        <item>16.8531896,11.0522259</item>
+        <item>16.8531896,13.0522259</item>
+        <item>26.8551896,11.0522259</item>
+        <item>33.8531896,55.0522259</item>
+
+    </string-array>
+
     <string-array name="locals">
         <item>Japan St, Cité Montplaisir et Borgel</item>
         <item>Rue 8800, Tunis</item>

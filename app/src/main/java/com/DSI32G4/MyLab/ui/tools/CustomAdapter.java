@@ -61,7 +61,6 @@ public class CustomAdapter extends BaseAdapter {
 
 
 
-
             //holder.pin.setImageResource(row_pos.getPin());
             holder.titre.setText(row_pos.getTitle());
             holder.desc.setText(row_pos.getLocal());
@@ -72,4 +71,5 @@ public class CustomAdapter extends BaseAdapter {
         }
         return convertView;
     }
+
 }

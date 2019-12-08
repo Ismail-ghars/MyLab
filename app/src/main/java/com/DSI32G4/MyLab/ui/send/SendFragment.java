@@ -25,6 +25,7 @@ public class SendFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
 
 
+
         Intent intent = new Intent(getActivity(), loginActivity.class);
         startActivity(intent);
         return null;

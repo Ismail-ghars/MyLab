@@ -13,6 +13,13 @@ import com.google.android.material.snackbar.Snackbar;
 
 
 public class RecyclerAdapterInformations extends RecyclerView.Adapter<RecyclerAdapterInformations.ViewHolder> {
+    public String getTitles() {
+        return titles[0];
+    }
+
+    public int[] getImages() {
+        return images;
+    }
 
     private String[] titles = {
 
@@ -21,6 +28,7 @@ public class RecyclerAdapterInformations extends RecyclerView.Adapter<RecyclerAd
             "info 3",
             "info 4"
     };
+
 
     private int[] images = {R.drawable.actuality001,
             R.drawable.actuality002,

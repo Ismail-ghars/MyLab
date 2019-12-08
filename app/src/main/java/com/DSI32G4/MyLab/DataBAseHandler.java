@@ -1,12 +1,11 @@
 package com.DSI32G4.MyLab;
 
-
-
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.widget.TextView;
 
 public class DataBAseHandler extends SQLiteOpenHelper {
 
@@ -48,6 +47,16 @@ public class DataBAseHandler extends SQLiteOpenHelper {
         // Create tables again
         onCreate(db);
 
+    }
+
+    public boolean updateData(String email,String name,String surname,String date) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(KEY_FIRST_NAME,name);
+        contentValues.put(KEY_lAST_NAME,surname);
+        contentValues.put(KEY_MOB_NO,date);
+        db.update(TABLE_REGISTER, contentValues, "email_id=?",new String[] { email });
+        return true;
     }
 
     void addregister(RegisterData registerdata)
@@ -112,7 +121,6 @@ public class DataBAseHandler extends SQLiteOpenHelper {
             return "Not Exist";
         }
         else if(cursor.getCount()>=1 && cursor.moveToFirst()){
-
             password = cursor.getString(cursor.getColumnIndex(KEY_lAST_NAME));
             cursor.close();
 
@@ -146,7 +154,6 @@ public class DataBAseHandler extends SQLiteOpenHelper {
             return "Not Exist";
         }
         else if(cursor.getCount()>=1 && cursor.moveToFirst()){
-
             password = cursor.getString(cursor.getColumnIndex(KEY_MOB_NO));
             cursor.close();
 
@@ -156,6 +163,25 @@ public class DataBAseHandler extends SQLiteOpenHelper {
 
     }
 
+    //code to get info
+    String getinfo(String username){
+        SQLiteDatabase db = this.getReadableDatabase();
+        //String selectquery="SELECT * FROM TABLE_REGISTER";
+        Cursor cursor=db.query(TABLE_REGISTER,null,  "email_id=?",new String[]{username},null, null, null, null);
+        if(cursor.getCount()<1){
+            cursor.close();
+            return "Not Exist";
+        }
+        else if(cursor.getCount()>=1 && cursor.moveToFirst()){
+
+            password = cursor.getString(cursor.getColumnIndex(KEY_PASSWORD));
+            cursor.close();
+
+        }
+        return password;
+
+
+    }
 
     public String getDatabaseName() {
         return DATABASE_NAME;

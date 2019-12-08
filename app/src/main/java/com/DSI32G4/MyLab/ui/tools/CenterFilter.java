@@ -20,6 +20,7 @@ public class CenterFilter extends AppCompatActivity {
         final String[] itemsOuv = new String[]{"08:00","09:00","10:00","11:00"};
         final String[] itemsFer = new String[]{"16:00","17:00","18:00"};
 
+
         ArrayAdapter<String> adapterOuv = new ArrayAdapter<String>(CenterFilter.this, android.R.layout.simple_spinner_item,itemsOuv);
         ArrayAdapter<String> adapterFer = new ArrayAdapter<String> (CenterFilter.this, android.R.layout.simple_spinner_item,itemsFer);
         ouv.setAdapter(adapterOuv);

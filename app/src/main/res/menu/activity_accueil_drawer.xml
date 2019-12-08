@@ -20,7 +20,9 @@
         <item
             android:id="@+id/nav_tools"
             android:icon="@drawable/ic_centres"
-            android:title="@string/menu_tools" />
+            android:title="@string/menu_tools"
+            />
+
         <item
             android:id="@+id/nav_actuality"
             android:icon="@drawable/ic_actualites"

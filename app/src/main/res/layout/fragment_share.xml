@@ -8,6 +8,7 @@
     android:orientation="vertical"
     tools:context=".RegisterActivity">
 
+
     <TextView
         android:id="@+id/modif"
         android:layout_width="match_parent"
@@ -68,7 +69,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingTop="30dp"
+
+        >
 
         <RadioButton
             android:id="@+id/modif_radio_homme"
@@ -93,7 +97,10 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingTop="30dp"
+
+        >
 
         <TextView
             android:layout_width="0dp"
@@ -102,12 +109,13 @@
             android:text="Date de naissance"
             android:textSize="20sp"></TextView>
 
-        <EditText
+        <TextView
             android:id="@+id/modifmobileno"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="3"
+            android:layout_weight="1"
             android:ems="8"
+            android:textSize="26dp"
             android:inputType="date" />
     </LinearLayout>
 

@@ -30,6 +30,7 @@ public class RowItem {
         this.local = local;
     }
 
+
     public RowItem(String title, int pin, String local){
         this.title=title;
         this.pin=pin;

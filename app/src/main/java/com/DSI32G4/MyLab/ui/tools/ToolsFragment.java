@@ -1,14 +1,24 @@
 package com.DSI32G4.MyLab.ui.tools;
 
+import android.content.Intent;
 import android.content.res.TypedArray;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
+import android.widget.Toolbar;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
+import com.DSI32G4.MyLab.MainActivity;
 import com.DSI32G4.MyLab.R;
 
 import java.util.ArrayList;
@@ -19,6 +29,7 @@ public class ToolsFragment extends Fragment {
     String[] titles;
     TypedArray pins;
     String[] locals;
+    String[] cbll;
 
     List<RowItem> rowItems;
     ListView listView;
@@ -33,6 +44,7 @@ public class ToolsFragment extends Fragment {
         titles = getResources().getStringArray(R.array.Titles);
         pins = getResources().obtainTypedArray(R.array.pins);
         locals = getResources().getStringArray(R.array.locals);
+        cbll = getResources().getStringArray(R.array.cbll);
 
         for (int i=0; i < titles.length; i++){
             RowItem item = new RowItem(titles[i],pins.getResourceId(i,-1),locals[i]);
@@ -41,83 +53,30 @@ public class ToolsFragment extends Fragment {
 
 
 
-
         listView = view.findViewById(R.id.l);
         CustomAdapter adapter = new CustomAdapter(this.getActivity(),rowItems);
         listView.setAdapter(adapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
+// Create a Uri from an intent string. Use the result to create an Intent.
+                Uri gmmIntentUri = Uri.parse("google.streetview:cbll="+cbll[position].toString());
+                Toast.makeText(getContext(), gmmIntentUri.toString(), Toast.LENGTH_LONG).show();
 
+// Create an Intent from gmmIntentUri. Set the action to ACTION_VIEW
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+// Make the Intent explicit by setting the Google Maps package
+                mapIntent.setPackage("com.google.android.apps.maps");
 
+// Attempt to start an activity that can handle the Intent
+                startActivity(mapIntent);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//        listView = view.findViewById(R.id.l);
-//
-//        ArrayList<HashMap<String,String>> list = new ArrayList<>();
-//
-//        HashMap<String,String> map;
-//
-//
-//        map = new HashMap<String, String>();
-//        map.put("Titre","Centre 1");
-//        map.put("Localisation","Localisation 1");
-//        map.put("Pin",String.valueOf(R.drawable.pin));
-//        list.add(map);
-//
-//        map = new HashMap<String, String>();
-//        map.put("Titre","Centre 2");
-//        map.put("Localisation","Localisation 2");
-//        map.put("Pin",String.valueOf(R.drawable.pin));
-//        list.add(map);
-//
-//        map = new HashMap<String, String>();
-//        map.put("Titre","Centre 3");
-//        map.put("Localisation","Localisation 3");
-//        map.put("Pin",String.valueOf(R.drawable.pin));
-//        list.add(map);
-//
-//        SimpleAdapter adapter = new SimpleAdapter(this.getActivity().getBaseContext(),
-//                list,
-//                R.layout.fragment_tools,
-//                new String[]{"Pin","Titre","Localisation"},
-//                new int[]{R.id.item_image,R.id.item_title,R.id.item_detail});
-//
-//        listView.setAdapter(adapter);
-
+            }
+        });
         return view;
 
-
     }
+
 
 }

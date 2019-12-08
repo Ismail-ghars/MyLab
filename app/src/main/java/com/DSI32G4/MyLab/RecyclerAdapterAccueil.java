@@ -13,36 +13,36 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.snackbar.Snackbar;
 
 
-public class RecyclerAdapterActuality extends RecyclerView.Adapter<RecyclerAdapterActuality.ViewHolder> {
-    public String getTitles() {
-        return titles[0];
-    }
+public class RecyclerAdapterAccueil extends RecyclerView.Adapter<RecyclerAdapterAccueil.ViewHolder> {
+    RecyclerAdapterActuality act=new RecyclerAdapterActuality();
+    RecyclerAdapterInformations info=new RecyclerAdapterInformations();
+    private String[] titles = {
 
-    public int[] getImages() {
-        return images;
-    }
+            act.getTitles() ,
+            info.getTitles() ,
+            "info 3",
 
-    private String[] titles = {"Révolutionner l'accès aux soins grâce au numérique",
-            "Sit in du cadre médical et paramédical",
-            "Un nouvel exploit médical en Tunisie",
-            "Il existe un trafic de dossiers médicaux des patients ..."};
-    public String[] description = {
-            "DERNIERE ACTUALITE:DERNIERE ACTUALITE:DERNIERE ACTUALITE:DERNIERE ACTUALITE:DERNIERE ACTUALITE:DERNIERE ACTUALITE:DERNIERE ACTUALITE:DERNIERE ACTUALITE:DERNIERE ACTUALITE:",
+    };
+    public String[] titres = {
+            "DERNIERE ACTUALITE:",
             "DERNIER CENTRE AJOUTE:",
             "DERNIER RESULTAT D'ANALYSE:",
-            "hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh"
     };
-
+    public String[] description = {
+            "DERNIERE ACTUALITE:DERNIERE ACTUALITE:DERNIERE ACTUALITE:DERNIERE ACTUALITE:\n\n\nDERNIERE ACTUALITE:DERNIERE ACTUALITE:DERNIERE ACTUALITE:DERNIERE ACTUALITE:DERNIERE ACTUALITE:",
+            "DERNIER CENTRE AJOUTE:",
+            "DERNIER RESULTAT D'ANALYSE:",
+    };
     private int[] images = {R.drawable.actuality001,
             R.drawable.actuality002,
             R.drawable.actuality003,
-            R.drawable.actuality004};
+           };
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.activity_list_item, parent, false);
+                .inflate(R.layout.activity_list_item_accueil, parent, false);
         return new ViewHolder(v);
     }
 
@@ -50,6 +50,7 @@ public class RecyclerAdapterActuality extends RecyclerView.Adapter<RecyclerAdapt
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.itemTitle.setText(titles[position]);
         holder.itemImage.setImageResource(images[position]);
+        holder.itemTitre.setText(titres[position]);
     }
 
     @Override
@@ -60,11 +61,13 @@ public class RecyclerAdapterActuality extends RecyclerView.Adapter<RecyclerAdapt
     class ViewHolder extends RecyclerView.ViewHolder {
         private ImageView itemImage;
         private TextView itemTitle;
+        private TextView itemTitre;
 
         private ViewHolder(@NonNull View itemView) {
             super(itemView);
-            itemImage = itemView.findViewById(R.id.item_image);
-            itemTitle = itemView.findViewById(R.id.item_title);
+            itemImage = itemView.findViewById(R.id.item_image_accueil);
+            itemTitle = itemView.findViewById(R.id.item_title_accueil);
+            itemTitre = itemView.findViewById(R.id.titre);
 
 
             itemView.setOnClickListener(new View.OnClickListener() {
@@ -74,11 +77,11 @@ public class RecyclerAdapterActuality extends RecyclerView.Adapter<RecyclerAdapt
                     Snackbar snackbar;
                     snackbar = Snackbar.make(v, description[position], Snackbar.LENGTH_SHORT);
                     View snackBarView = snackbar.getView();
-                    snackBarView.setBackgroundColor(Color.RED);
+                    snackBarView.setBackgroundColor(Color.rgb(63,37,130));
                     TextView textView = (TextView) snackBarView.findViewById(R.id.snackbar_text);
                     textView.setTextColor(Color.WHITE);
+                    snackbar.setDuration(8000);
                     snackbar.show();
-
 
                 }
             });
