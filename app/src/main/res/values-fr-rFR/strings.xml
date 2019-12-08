@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">MyLab</string>
+    <string name="name_app">My Lab</string>
+    <string name="Homme">Homme</string>
+    <string name="Femme">Femme</string>
+    <string name="createAccount"><u>Créer un Compte</u></string>
+    <string name="passeOublie"><u><b>Mot de Passe Oublié?</b></u></string>
+    <string name="title_activity_accueil">Accueil</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Options</string>
+    <string name="menu_home">Accueil</string>
+    <string name="menu_gallery">Mes Résultats</string>
+    <string name="menu_slideshow">Informations</string>
+    <string name="menu_tools">Centres</string>
+    <string name="menu_actuality">Actualité</string>
+    <string name="menu_share">Mon Compte</string>
+    <string name="menu_send">Se déconnecter</string>
+    <string name="image_description">Image d\'item</string>
+    <string name="text_description">Actualité</string>
+    <string-array name="Titles">
+        <item>Merdassi Guerdelli, Ahlem Centre Tanit Médical</item>
+        <item>Medical Center Des Douanes</item>
+        <item>Medical Center Ibn Rochd</item>
+        <item>Centre Médical Dorra</item>
+        <item>Medical Imaging Center of Ibn Nafis - ARIANA Radiology</item>
+        <item>Centre d Imagerie Médicale et de Radiologie Les Jardins de L Aouina - Dr MEKKI Bassem</item>
+        <item>Centre d Imagerie Médicale et de Radiologie Jardins d El Menzah Docteur Meriem Sayed</item>
+        <item>Center Oncology Medicale Et De Radiothérapie</item>
+        <item>Radiologie ghazela (centre d imagerie médicale el ghazela )Dr. HAJER MHALLA FERJANI</item>
+        <item>centre laser médical La marsa</item>
+        <item>CIMA :: Centre d Imagerie Médicale de l Ariana [Sami Said]</item>
+        <item>Centre médical El Farabi</item>
+        <item>CIML Centre d Imagerie Médicale du Lac</item>
+        <item>Manouba Medical Center</item>
+        <item>Medical Center Sabri</item>
+    </string-array>
+
+    <string-array name="pins">
+        <item>@drawable/pin</item>
+        <item>@drawable/pin</item>
+        <item>@drawable/pin</item>
+        <item>@drawable/pin</item>
+        <item>@drawable/pin</item>
+        <item>@drawable/pin</item>
+        <item>@drawable/pin</item>
+        <item>@drawable/pin</item>
+        <item>@drawable/pin</item>
+        <item>@drawable/pin</item>
+        <item>@drawable/pin</item>
+        <item>@drawable/pin</item>
+        <item>@drawable/pin</item>
+        <item>@drawable/pin</item>
+        <item>@drawable/pin</item>
+    </string-array>
+
+    <string-array name="cbll">
+        <item>346.414382,10.013988</item>
+        <item>16.8531896,11.0522259</item>
+        <item>16.8531896,13.0522259</item>
+        <item>26.8551896,11.0522259</item>
+        <item>33.8531896,55.0522259</item>
+        <item>36.8531896,11.0574059</item>
+        <item>16.8531896,11.0522259</item>
+        <item>16.8531896,13.0522259</item>
+        <item>26.8551896,11.0522259</item>
+        <item>33.8531896,55.0522259</item>
+        <item>36.8531896,11.0574059</item>
+        <item>16.8531896,11.0522259</item>
+        <item>16.8531896,13.0522259</item>
+        <item>26.8551896,11.0522259</item>
+        <item>33.8531896,55.0522259</item>
+
+    </string-array>
+
+    <string-array name="locals">
+        <item>Japan St, Cité Montplaisir et Borgel</item>
+        <item>Rue 8800, Tunis</item>
+        <item>Averroes medical Manar 2 Tunis En face de la clinique ancienne</item>
+        <item>Tunis</item>
+        <item>84 bis Avenue Habib Bourguiba, Ariana 2080</item>
+        <item>Résidence Salma Bloc F, 2ème étage, L Aouina، Avenue Dar Fadhal، Tunis 2035</item>
+        <item>Résidence Cordoba (face à Monoprix ex Mercure Rue des Jasmins Jardins d El Menzah 2, 2098</item>
+        <item>Ariana</item>
+        <item>Ariana</item>
+        <item>Rue de l Imam Ibn Arafa, Marsa</item>
+        <item>Ariana</item>
+        <item>Rue Khadija Ben Khouiled, Ariana</item>
+        <item>Rue de la Feuille d Érable, Tunis</item>
+        <item>Manouba</item>
+        <item>Site archéologique de Carthage</item>
+    </string-array>
+
+</resources>
