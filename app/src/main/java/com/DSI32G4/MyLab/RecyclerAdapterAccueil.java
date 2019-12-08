@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.snackbar.Snackbar;
 
-
+//Adapteur pour le RecyclerView du fragment d'acceuil
 public class RecyclerAdapterAccueil extends RecyclerView.Adapter<RecyclerAdapterAccueil.ViewHolder> {
     RecyclerAdapterActuality act=new RecyclerAdapterActuality();
     RecyclerAdapterInformations info=new RecyclerAdapterInformations();

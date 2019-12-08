@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.snackbar.Snackbar;
 
-
+//Adapter pour le RecyclerView du fragment Informations
 public class RecyclerAdapterInformations extends RecyclerView.Adapter<RecyclerAdapterInformations.ViewHolder> {
     public String getTitles() {
         return titles[0];

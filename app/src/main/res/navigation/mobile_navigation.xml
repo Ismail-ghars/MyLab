@@ -9,16 +9,16 @@
         android:id="@+id/nav_home"
         android:name="com.DSI32G4.MyLab.ui.home.HomeFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_accueil" />
+        tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="com.DSI32G4.MyLab.ui.gallery.GalleryFragment"
+        android:name="com.DSI32G4.MyLab.ui.gallery.NewsFragment"
         android:label="@string/menu_gallery"
         tools:layout="@layout/fragment_gallery" />
     <fragment
         android:id="@+id/nav_actuality"
-        android:name="com.DSI32G4.MyLab.ui.gallery.GalleryFragment"
+        android:name="com.DSI32G4.MyLab.ui.gallery.NewsFragment"
         android:label="@string/menu_actuality"
         tools:layout="@layout/fragment_actuality" />
     <fragment
@@ -29,19 +29,19 @@
 
     <fragment
         android:id="@+id/nav_tools"
-        android:name="com.DSI32G4.MyLab.ui.tools.ToolsFragment"
+        android:name="com.DSI32G4.MyLab.ui.tools.CentersFragment"
         android:label="@string/menu_tools"
-        tools:layout="@layout/fragment_tools" />
+        tools:layout="@layout/fragment_centers" />
 
     <fragment
         android:id="@+id/nav_share"
-        android:name="com.DSI32G4.MyLab.ui.share.ShareFragment"
+        android:name="com.DSI32G4.MyLab.ui.share.UpdateProfile"
         android:label="@string/menu_share"
-        tools:layout="@layout/fragment_share" />
+        tools:layout="@layout/fragment_updateprofile" />
 
     <fragment
         android:id="@+id/nav_send"
-        android:name="com.DSI32G4.MyLab.ui.send.SendFragment"
+        android:name="com.DSI32G4.MyLab.ui.send.LogOff"
         android:label="@string/menu_send"
-        tools:layout="@layout/fragment_send" />
+        tools:layout="@layout/fragment_logoff" />
 </navigation>

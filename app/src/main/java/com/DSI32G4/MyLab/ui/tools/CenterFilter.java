@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.DSI32G4.MyLab.R;
 
+//Classe pour filtrer la recherche des centres (pas encore utilisée)
 public class CenterFilter extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {

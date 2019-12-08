@@ -18,7 +18,7 @@ import androidx.appcompat.widget.Toolbar;
 import android.view.Menu;
 
 
-
+//Classe pour charger tout les Fragments implémentés
 public class Accueil extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
@@ -50,6 +50,8 @@ public class Accueil extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.accueil, menu);
         return true;
     }
+
+
     public void affichecenter(Menu menu){
         getMenuInflater().inflate(R.menu.center, menu);
 

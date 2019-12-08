@@ -5,26 +5,22 @@ import android.content.res.TypedArray;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
-import android.widget.Toolbar;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.Navigation;
 
-import com.DSI32G4.MyLab.MainActivity;
 import com.DSI32G4.MyLab.R;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class ToolsFragment extends Fragment {
+
+//Classe du fragment pour afficher les différents centres
+public class CentersFragment extends Fragment {
 
     String[] titles;
     TypedArray pins;
@@ -38,7 +34,7 @@ public class ToolsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.fragment_tools,container,false);
+        View view = inflater.inflate(R.layout.fragment_centers,container,false);
 
         rowItems = new ArrayList<RowItem>();
         titles = getResources().getStringArray(R.array.Titles);

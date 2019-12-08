@@ -7,6 +7,8 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.widget.TextView;
 
+
+//Classe pour manipuler la base de données
 public class DataBAseHandler extends SQLiteOpenHelper {
 
     public DataBAseHandler(Context context, Object name,Object factory, int version) {

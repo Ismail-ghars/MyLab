@@ -1,16 +1,16 @@
-package com.DSI32G4.MyLab.ui.send;
+package com.DSI32G4.MyLab.ui.share;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class SendViewModel extends ViewModel {
+public class UpdateProfileViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public SendViewModel() {
+    public UpdateProfileViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is send fragment");
+        mText.setValue("This is share fragment");
     }
 
     public LiveData<String> getText() {

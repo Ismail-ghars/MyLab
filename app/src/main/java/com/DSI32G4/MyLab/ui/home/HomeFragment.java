@@ -11,8 +11,10 @@ import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.DSI32G4.MyLab.RecyclerAdapterAccueil;
 import com.DSI32G4.MyLab.RecyclerAdapterActuality;
 
+//Cette classe est pour le fragment de la page d'accueil
 public class HomeFragment extends Fragment {
 
     private HomeViewModel homeViewModel;
@@ -20,6 +22,7 @@ public class HomeFragment extends Fragment {
     RecyclerView.LayoutManager layoutManager;
     RecyclerView.Adapter adapter;
 
+    //Création du corps du fragment
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         homeViewModel =
@@ -29,7 +32,7 @@ public class HomeFragment extends Fragment {
         recyclerView = new RecyclerView(getContext());
         layoutManager = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(layoutManager);
-        adapter = new RecyclerAdapterActuality();
+        adapter = new RecyclerAdapterAccueil();
         recyclerView.setAdapter(adapter);
 
         return recyclerView;

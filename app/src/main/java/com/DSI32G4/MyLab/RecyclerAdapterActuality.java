@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.snackbar.Snackbar;
 
-
+//Adapteur pour le recycler View de fragment Actualité
 public class RecyclerAdapterActuality extends RecyclerView.Adapter<RecyclerAdapterActuality.ViewHolder> {
     public String getTitles() {
         return titles[0];

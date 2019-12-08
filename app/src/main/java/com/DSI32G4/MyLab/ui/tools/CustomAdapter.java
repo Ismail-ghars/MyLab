@@ -13,6 +13,8 @@ import com.DSI32G4.MyLab.R;
 
 import java.util.List;
 
+
+// un adapter pour ajouter des items à la liste
 public class CustomAdapter extends BaseAdapter {
 
     Context context;

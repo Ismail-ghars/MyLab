@@ -1,15 +1,16 @@
 package com.DSI32G4.MyLab;
 
+
+//Classe pour manipuler les données de l'utilisateur lors d'enregistrement
  public class RegisterData {
 
 
-         //private variables
-         int _id;
-         String first_name;
-         String last_name;
-         String email_id;
-         String DateNaissance;
-         String sexe;
+          int _id;
+          String first_name;
+          String last_name;
+          String email_id;
+          String DateNaissance;
+          String sexe;
 public String getPassword() {
         return password;
         }
@@ -17,7 +18,7 @@ public String getPassword() {
         this.password = password;
         }
 
-        String password;
+        public String password;
 
 // Empty constructor
 public RegisterData(){

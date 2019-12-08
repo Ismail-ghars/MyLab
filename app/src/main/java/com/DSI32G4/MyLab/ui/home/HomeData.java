@@ -2,6 +2,7 @@ package com.DSI32G4.MyLab.ui.home;
 
 import com.DSI32G4.MyLab.R;
 
+//Cette Classe n'est pas encore utilisée
 public class HomeData {
     public String[] titles = new String[]{
             "DERNIERE ACTUALITE: Révolutionner l'accés aux soins grâce au numérique",

@@ -21,6 +21,8 @@ import androidx.fragment.app.DialogFragment;
 
 import java.util.Calendar;
 
+
+//Classe pour l'activité d'enregistrement du compte
 public class RegisterActivity extends Activity {
         private DatePickerDialog.OnDateSetListener mDateSetListener1;
         EditText first, last, email, pass, confpass;

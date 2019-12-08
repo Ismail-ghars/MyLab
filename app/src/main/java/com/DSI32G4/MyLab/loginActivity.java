@@ -27,7 +27,7 @@ import com.google.android.gms.tasks.Task;
 
 import static androidx.constraintlayout.widget.Constraints.TAG;
 
-
+//Classe pour l'authentification (SQLite et Google)
 public class loginActivity extends Activity {
 
     EditText  pass;
@@ -44,7 +44,7 @@ public class loginActivity extends Activity {
         return user;
     }
 
-    //Begining of Google Methods
+    //Début des méthodes de Google Autetification
     @Override
     protected void onStart() {
         super.onStart();
@@ -76,6 +76,7 @@ public class loginActivity extends Activity {
             Log.w(TAG, "signInResult:failed code=" + e.getStatusCode());
         }
     }
+    //Fin des Méthodes Google
 
 
     @Override

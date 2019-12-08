@@ -7,9 +7,10 @@ import android.widget.DatePicker;
 
 import androidx.fragment.app.DialogFragment;
 
-import com.DSI32G4.MyLab.ui.share.ShareFragment;
+import com.DSI32G4.MyLab.ui.share.UpdateProfile;
 
 import java.util.Calendar;
+
 
 public class SelectDateFragment extends DialogFragment implements DatePickerDialog.OnDateSetListener {
    static String s="";
@@ -32,7 +33,7 @@ public class SelectDateFragment extends DialogFragment implements DatePickerDial
         populateSetDate(yy, mm+1, dd);
     }
     public void populateSetDate(int year, int month, int day) {
-       ShareFragment.getDd().setText(day+"/"+month+"/"+year) ;
+       UpdateProfile.getDd().setText(day+"/"+month+"/"+year) ;
     }
 
 }
